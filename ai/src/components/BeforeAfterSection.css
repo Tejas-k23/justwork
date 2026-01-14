@@ -99,7 +99,7 @@
 
 .label-after {
   top: 20px;
-  right: 20px;
+  right: auto;
 }
 
 .slider-handle {

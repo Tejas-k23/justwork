@@ -146,7 +146,10 @@ const BeforeAfterSection = () => {
               className="slider-image after-image"
               style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
             >
-              <div className="label label-after">After</div>
+              <div 
+                className="label label-after"
+                style={{ left: `${Math.max(20, Math.min(position - 15, 80))}%` }}
+              >After</div>
               <img 
                 key={`after-${selectedIndex}`}
                 src={currentPair.after} 

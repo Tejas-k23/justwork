@@ -141,6 +141,9 @@
   padding: 8px;
   max-width: 300px;
   width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out 1.0s forwards;
 }
 
 .phone-images-container {

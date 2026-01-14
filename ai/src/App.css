@@ -1,10 +1,17 @@
 .app {
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   background: transparent;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+}
+
+/* Ensure sections with white backgrounds have proper z-index */
+.app > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Reusable Container Class */
@@ -14,7 +21,7 @@
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
