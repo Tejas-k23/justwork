@@ -19,6 +19,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -26,6 +31,7 @@ body {
   background: #ffffff;
   position: relative;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Animated Mesh Gradient Background */
@@ -133,6 +139,15 @@ button {
 }
 
 @media (max-width: 640px) {
+  html,
+  body,
+  #root,
+  .app {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
   .framer-badge {
     bottom: 10px;
     right: 10px;

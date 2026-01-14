@@ -4,6 +4,7 @@
   background: transparent;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 /* Reusable Container Class */
@@ -13,6 +14,7 @@
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 @media (min-width: 640px) {
