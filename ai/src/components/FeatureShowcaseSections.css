@@ -28,18 +28,18 @@
 .showcase-feature-card {
   background: #ffffff;
   border-radius: 24px;
-  padding: 24px;
+  padding: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
 }
 
 .feature-content-left {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .feature-label {
@@ -81,7 +81,7 @@
 .feature-items {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .feature-item {
@@ -114,7 +114,7 @@
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
-  padding: 20px;
+  padding: 16px;
 }
 
 .checkered-background {
@@ -157,8 +157,8 @@
 
   .showcase-feature-card {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 20px;
+    gap: 20px;
+    padding: 18px;
   }
 
   .feature-heading {
