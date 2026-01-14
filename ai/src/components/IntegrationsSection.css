@@ -1,11 +1,10 @@
 .integrations {
   background: #fff;
-  padding: 100px 60px;
+  padding: 100px 0;
 }
 
 .integrations-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
@@ -49,17 +48,16 @@
   z-index: 1;
 }
 
-.animated-path {
-  stroke-dashoffset: 0;
-  animation: dashAnimation 2s linear infinite;
+.animated-dash {
+  animation: dashFlow 2s linear infinite;
 }
 
-@keyframes dashAnimation {
+@keyframes dashFlow {
   0% {
-    stroke-dashoffset: 130;
+    stroke-dashoffset: 0;
   }
   100% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 130;
   }
 }
 
@@ -71,6 +69,10 @@
 }
 
 .icon-row-top {
+  margin-bottom: 20px;
+}
+
+.icon-row-bottom {
   margin-bottom: auto;
 }
 
@@ -130,9 +132,9 @@
 
 .integrations-content h2 {
   font-size: 60px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000;
-  line-height: 1.1;
+  line-height: 1.05;
   margin-bottom: 40px;
   letter-spacing: -0.02em;
 }
@@ -210,7 +212,7 @@
 
 @media (max-width: 968px) {
   .integrations {
-    padding: 60px 30px;
+    padding: 60px 0;
   }
   
   .integrations-content h2 {
@@ -235,7 +237,7 @@
 
 @media (max-width: 640px) {
   .integrations {
-    padding: 40px 24px;
+    padding: 40px 0;
   }
   
   .integrations-content h2 {

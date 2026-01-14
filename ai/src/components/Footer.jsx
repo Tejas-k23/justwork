@@ -5,7 +5,8 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="container">
+        <div className="footer-container">
         <div className="footer-grid">
           {/* Column 1 - Brand Section */}
           <div className="footer-column">
@@ -64,6 +65,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p className="footer-copyright">© ProductAI 2025. All rights reserved.</p>
         </div>
+      </div>
       </div>
     </footer>
   );

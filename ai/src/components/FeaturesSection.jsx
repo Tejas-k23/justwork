@@ -88,8 +88,9 @@ const FeaturesSection = () => {
 
   return (
     <section className="features" id="features" ref={sectionRef}>
-      <div className={`features-container ${isVisible ? 'visible' : ''}`}>
-        <div className="feature-grid">
+      <div className="container">
+        <div className={`features-container ${isVisible ? 'visible' : ''}`}>
+          <div className="feature-grid">
           {visibleFeatures.map((feature, index) => (
             <div 
               key={`${currentIndex}-${index}`}
@@ -109,6 +110,7 @@ const FeaturesSection = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

@@ -105,21 +105,23 @@ const MissionSection = () => {
 
   return (
     <section className="mission" id="about" ref={sectionRef}>
-      <div className="mission-container">
-        <p ref={textRef} className={`mission-text ${isTextVisible ? 'visible' : ''}`}>
-          We're on a mission to help small businesses create <span className="highlight">professional marketing images</span> without design skills. With <span className="highlight">AI-powered</span> generation and WhatsApp convenience, ProductAI turns product photos into ad-ready visuals in seconds.
-        </p>
-        <div className="stats">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat">
-              <h3>
-                {displayValues[index].toLocaleString()}{stat.suffix}
-              </h3>
-              <span>{stat.label}</span>
-            </div>
-          ))}
+      <div className="container">
+        <div className="mission-container">
+          <p ref={textRef} className={`mission-text ${isTextVisible ? 'visible' : ''}`}>
+            We're on a mission to help small businesses create <span className="highlight">professional marketing images</span> without design skills. With <span className="highlight">AI-powered</span> generation and WhatsApp convenience, ProductAI turns product photos into ad-ready visuals in seconds.
+          </p>
+          <div className="stats">
+            {stats.map((stat, index) => (
+              <div key={index} className="stat">
+                <h3>
+                  {displayValues[index].toLocaleString()}{stat.suffix}
+                </h3>
+                <span>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+          <h2 className="section-heading">How it works</h2>
         </div>
-        <h2 className="section-heading">How it works</h2>
       </div>
     </section>
   );
